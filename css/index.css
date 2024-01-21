@@ -1,0 +1,62 @@
+
+header { position: fixed; width: 100%; height: 80px; z-index: 1; background-color: #fff;} 
+header h1 { margin-left: 20px; top: 50%; font-family: 'Croissant One', serif; } 
+
+
+nav { position: absolute; width: 100%; top: 50%; transform: translateY(-50%); } 
+nav input { width: 40%; padding: 1px; border: 1.5px solid #0B315E; border-radius: 5px; } 
+.nav-wrapper { display: flex; position: relative; width: 100%; justify-content: flex-end; margin-right: 20px; } 
+
+
+.banner { display: flex; position: relative; width: 100%; padding-top: 100px; } 
+.banner img { width: 100vw; padding: 0 1rem; transition: transform 0.5s ease; } 
+
+.line-wrapper { display: flex; position: relative; width: 100%; height: 120px; align-items: center; justify-content: center; }
+.line { width: 96%; height: 1px; background-color: #ebebeb;}
+
+.categories-wrapper { position: relative; } 
+.categories { display: flex; margin-top: 50px; justify-content: space-around; color: #000; } 
+.category { cursor: pointer; transition: transform 0.2s ease; display: flex; flex-direction: column; align-items: center; } 
+.category p { margin-top: 20px; font-size: 18px; font-weight: 400; } 
+.category-image { width: 160px; height: 160px; overflow: hidden; border-radius: 50%; } 
+.category img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.2s ease; } 
+.category img:hover { transform: scale(1.1); } 
+
+.font-bold { font-weight: 500; } 
+
+.restaurant-wrapper { position: relative; padding: 0 20px; } 
+.restaurant { cursor: pointer; border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; transition: transform 0.2s ease; } 
+.restaurant-image { overflow: hidden; } 
+.restaurant-image img { width: 100%; transition: transform 0.2s ease; } 
+.restaurant-image img:hover { transform: scale(1.1); } 
+
+.explanation, .star, .location { color: #ccc; font-size: 13px; font-weight: 300; line-height: 1.4; }
+span { color: #ffcc00;}
+
+
+
+/* main */
+#container { max-width: 600px; width: 100%; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; flex-direction: column; } 
+
+/* logo */
+#logo { max-width: 40%; height: auto; } 
+
+/* form */
+#reservation-form { margin-top: 20px; } 
+label { font-size: 1.2rem; font-weight: 500; } 
+.swal2-title { font-size: 1.4rem; } /* message*/
+
+/* progress-bar */
+.progress-bar { width: 0; height: 5px; background-color: #0B315E; border-radius: 5px; margin-top: 10px; transition: width 0.5s ease-in-out; } 
+
+/* btn */
+button { background-color: #0B315E; color: #fff; cursor: pointer; border: none; border-radius: 5px; padding: 10px; width: 100%; } 
+
+
+
+.bottom-bar { position: fixed; bottom: 0; left: 0; width: 100%; height: 70px; background-color: #fff; display: flex; justify-content: space-around; align-items: center; padding: 10px; color: #fff; border-radius: 20px 20px 0 0; box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); } 
+.bottom-bar a { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: #ccc; transition: color 0.2s ease; }
+.bottom-bar a:hover { color: #0B315E; }
+.bottom-bar i { font-size: 1.5rem; } 
+.bottom-bar .fa-home { color: #0B315E; } 
+.bottom-bar { color: #ccc; } 
