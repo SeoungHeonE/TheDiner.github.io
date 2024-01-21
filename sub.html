@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheDiner | 식당 예약</title>
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/material-design-icons-iconfont@6.0.0/dist/material-design-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+</head>
+<body>
+<!-- main -->
+<div id="container">
+    <!-- logo -->
+    <img id="logo" src="./image/logo2.png" alt="TheDiner 로고">
+    <!-- 예약 -->
+    <h1 class="text-2xl font-bold p-4 mb-4">TheDiner 예약</h1>
+    <!-- form -->
+    <form id="reservation-form">
+        <!-- 음식점 이름 입력 라벨 -->
+        <label for="restaurant-name">음식점 이름</label>
+        <!-- 음식점 이름 입력 필드 -->
+        <input type="text" id="restaurant-name" oninput="updateProgressBar()" class="border p-1.5 mt-1 mb-4 w-full rounded" required>
+
+
+        <!-- 위치 입력 라벨 -->
+        <label for="location">위치</label> 
+        <!-- 위치 입력 필드 -->
+        <input type="text" id="location" oninput="updateProgressBar()" class="border p-1.5 mt-1 mb-4 w-full rounded" required>
+
+
+        <!-- 날짜 입력 라벨 -->
+        <label for="date">날짜</label>
+        <!-- 날짜 입력 필드 -->
+        <input type="date" id="date" oninput="updateProgressBar()" class="border p-1.5 mt-1 mb-4 w-full rounded" required>
+
+
+        <!-- 시간 입력 라벨 -->
+        <label for="time">시간</label>
+        <!-- 시간 입력 필드 -->
+        <input type="time" id="time" oninput="updateProgressBar()" class="border p-1.5 mt-1 mb-4 w-full rounded" required>
+
+
+        <!-- 인원 수 입력 라벨 -->
+        <label for="people">인원 수</label>
+        <!-- 인원 수 입력 필드 -->
+        <input type="number" id="people" oninput="updateProgressBar()" class="border p-1.5 mt-1 mb-4 w-full rounded"required>
+
+
+        <!-- 진행 상태 표시 바 -->
+        <div class="progress-bar" id="progress-bar"></div>
+
+        <!-- 예약 완료 버튼 -->
+        <button type="button" onclick="saveReservation()" class="mt-4">예약 완료</button>
+    </form>
+</div>
+
+    <!-- script -->
+    <script src="./js/sub.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/a40df01e-0594-489f-820f-59634b006b9d/webchat/config.js" defer></script>
+</body>
+</html>
